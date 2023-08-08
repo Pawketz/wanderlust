@@ -1,5 +1,12 @@
 /*Author: Justin Dyer*/
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,6 +51,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+
 
 /**
 * Mobile first styling
@@ -204,7 +214,7 @@ footer{
   justify-items: center;
   padding-bottom: .5rem;
   text-align: center;
-  max-width: 100vw;
+  
 }
 #testimonials>div>section>p{
   line-height: 1.5rem;
@@ -244,9 +254,7 @@ footer{
   border-bottom: 1px solid #222222;
   background-color: #55BCD5;
   padding: 40.5px 156.5px;
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+
 }
 
 
@@ -262,25 +270,21 @@ footer{
   align-items: center;
   justify-content: center;
   background-color: #F6D64A;
-  transition: top 0.3s ease-in-out;
-  -webkit-transition: top 0.3s ease-in-out;
-  -o-transition: top 0.3s ease-in-out;
+
   
 }
 
 #menu-toggle ul{
   position: absolute;
   padding-inline-start: 0;
-  width: 100%;
+  width: 100vw;
   font-weight: var(--semiBold);
 
   background: #ededed;
   list-style-type: none;
   /* Hide the menu off-screen to the left */
   left: -2000%;
-  -webkit-transition: left 0.3s ease;
-  -o-transition: left 0.3s ease;
-  transition: left 0.3s ease; 
+
 
   
 }
@@ -303,13 +307,10 @@ footer{
   background-color: #222222;
   color: #fff;
   text-align: center;
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  -o-transition: 0.3s ease-in-out;
   position: absolute;
   left: 0;
   top:0;
-  height:
+  height:50px;
 }
 #toggle{
   display: none;
