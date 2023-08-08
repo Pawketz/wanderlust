@@ -51,6 +51,9 @@ table {
 :root{
   --semiBold: 600;
 }
+html{
+  width: 100%;
+}
 body{
   display: grid;
   grid-template-areas: 
@@ -93,13 +96,15 @@ header h1{
   grid-area: heading;
   margin-left: 3.5rem;
 }
+label[for='toggle']{
+  color: blue;
+  background-color: #F6D64A
+
+}
 nav li{
   list-style-type: none;
 }
-nav label{
 
-  background-color: #F6D64A;
-}
 p{
   line-height: 30px;
   font-size: 1rem;
