@@ -52,7 +52,7 @@ table {
   --semiBold: 600;
 }
 html{
-  width: 100%;
+  max-width: 100%;
 }
 body{
   display: grid;
@@ -64,7 +64,7 @@ body{
     "about"
     "contact"
     "footer";
-  width:100%;
+
 }
 
 header{
@@ -97,7 +97,7 @@ header h1{
   margin-left: 3.5rem;
 }
 label[for='toggle']{
-  color: blue;
+  
   background-color: #F6D64A
 
 }
@@ -158,10 +158,12 @@ footer{
 }
 #intro{
   grid-area: intro;
+
 }
 #plan{
   grid-area: plan;
   background-color: #F6D64A;
+  padding-bottom: 1rem;
 }
 #plan h3{
   padding-top: 1rem;
@@ -192,6 +194,17 @@ footer{
 }
 #testimonials{
   grid-area: testimonials;
+  padding-top: 3rem;
+
+}
+#testimonials>div{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+ 
+}
+#testimonials>section>p{
+  padding-bottom: 5rem;
 }
 #about{
   grid-area: about;
@@ -208,8 +221,13 @@ footer{
 }
 
 #menu-toggle a {
+  display:flex;
+  flex-wrap:wrap;
   text-decoration: none;
   color: #232323;
+  border-bottom: 1px solid #222222;
+  background-color: #55BCD5;
+  padding: 40.5px 156.5px;
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -218,11 +236,20 @@ footer{
 
 
 #menu-toggle label {
-  margin-top: 2rem;
-  padding: 3rem;
-  display: inline-block;
-  padding: 20px 87.5px;
+  margin-top: 3.875rem;
+  font-weight: var(--semiBold);
+  display: flex;
+  cursor: pointer;
+  
+  width:15.625rem;
+  height: 3.125rem;
+  align-items: center;
+  justify-content: center;
   background-color: #F6D64A;
+  transition: top 0.3s ease-in-out;
+  -webkit-transition: top 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out;
+  
 }
 
 #menu-toggle ul{
@@ -241,19 +268,32 @@ footer{
 
   
 }
-#menu-toggle li{
-  padding: 40.5px 156.5px;
-  border-bottom: 1px solid #222222;
-  background-color: #55BCD5;
-  text-transform: uppercase;
-}
+/**
+  #menu-toggle li{
+    padding: 40.5px 156.5px;
+    border-bottom: 1px solid #222222;
+    background-color: #55BCD5;
+    text-transform: uppercase;
+  }
+*/
 #menu-toggle input:checked ~ ul {
   left: 0;
+  margin-top: 100px;
+  
 }
-#menu-toggle input:checked label {
+#menu-toggle input:checked ~ label {
   z-index: 2;
-
-
+  width: 100vw;
+  background-color: #222222;
+  color: #fff;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  top:0;
+  height:
 }
 #toggle{
   display: none;
