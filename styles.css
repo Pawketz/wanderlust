@@ -463,9 +463,6 @@ footer a:nth-last-of-type(1){
     h2+p {
       padding-left: 2rem;
     }
-    form{
-      margin-left: 4rem;
-    }
     #plan h3 {
       padding-top: 2rem;
       padding-left: 1.5rem;
@@ -497,9 +494,6 @@ footer a:nth-last-of-type(1){
     }
     #about>div {
       align-items: center;
-    }
-    #contact {
-      justify-content: start;
     }
     #contact h3{
       padding-top: 4rem;
